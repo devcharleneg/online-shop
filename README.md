@@ -1,12 +1,13 @@
-#A sample project for built with React.
+A sample project for built with React.
 
-##Tech Stack Used
+Tech Stack Used
 
-#FRONT END
+FRONT END
 - HTML
 - CSS 
 - ReactJS
 - Bootstrap
-#BACK END
+
+BACK END
 - Express
 - MySQL
