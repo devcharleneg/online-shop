@@ -12,7 +12,9 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
 
-import { Button,Alert } from 'reactstrap';
+import HomeCarousel from '../../components/Home/HomeCarousel';
+import Sale from '../../components/Home/Sale';
+import {Row,Col} from 'react-bootstrap';
 
 class Home extends React.Component {
   static propTypes = {
@@ -29,17 +31,15 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>Home</h1>   
-          <Button color="primary">primary</Button>{' '}
-        <Button color="secondary">secondary</Button>{' '}
-        <Button color="success">success</Button>{' '}
-        <Button color="info">info</Button>{' '}
-        <Button color="warning">warning</Button>{' '}
-        <Button color="danger">danger</Button>{' '}
-        <Button color="link">link</Button>
-        <Alert color="success">
-        <strong>Well done!</strong> You successfully read this important alert message.
-      </Alert>
+          <Row>
+            <Col sm={10} smOffset={1}>
+              <HomeCarousel />
+              <h3>Item on Sale</h3>
+              <div className={s.saleRow}>  
+                <Sale />
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     );

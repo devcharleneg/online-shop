@@ -1,0 +1,14 @@
+:global {
+	.thumbnail > img {
+    	height: 150px;
+	}
+}
+
+.saleRow {
+	margin-top: 20px;
+}
+
+.price {
+	font-weight: 600;
+    color: #7fb30f;
+}
