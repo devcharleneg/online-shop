@@ -1,4 +1,4 @@
-A sample project for built with React.
+A sample project built with React.
 
 Tech Stack Used
 
